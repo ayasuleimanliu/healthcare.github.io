@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      margin: 0;
+    }
+    .header {
+      background-color: #28a745;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Book an Appointment</h1>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <label for="doctor">Choose Doctor:</label>
+      <select id="doctor" required>
+        <option value="">-- Select Doctor --</option>
+        <option value="Dr. Smith">Dr. Smith – Cardiology</option>
+        <option value="Dr. James">Dr. James – General Medicine</option>
+        <option value="Dr. Aisha">Dr. Aisha – Pediatrics</option>
+        <option value="Dr. Omar">Dr. Omar – Neurology</option>
+        <option value="Dr. Layla">Dr. Layla – Dermatology</option>
+      </select>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" required />
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" required />
+
+      <a href="doctor.html"><button type="submit">Confirm Appointment</button></a>
+       <a class="btn" href="doctor.html">Confirm appintment </a>
+    </form>
+  </div>
+</body>
+</html>
